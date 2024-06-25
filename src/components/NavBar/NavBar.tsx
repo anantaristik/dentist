@@ -21,7 +21,7 @@ export default function NavBar() {
                     <div className="hover:text-biru cursor-pointer" >Penyakit</div>
                     <div className="hover:text-biru cursor-pointer" >Perawatan</div>
                     <div className="hover:text-biru cursor-pointer" >Kontak</div>
-                    <div className="text-white bg-pink py-2 px-3 rounded hover:text-biru cursor-pointer">Quiz</div>
+                    <div className="text-white bg-pink hover:bg-pink-600 py-2 px-3 rounded cursor-pointer">Quiz</div>
                 </div>
                 <div className="md:hidden flex items-center">
                     <button onClick={toggleMenu} className="text-gray-700 hover:text-biru focus:outline-none pl-3">
