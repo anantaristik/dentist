@@ -47,7 +47,7 @@ export default function Hero() {
 
             <div className="absolute right-0 bottom-0" style={{ zIndex: 0}}>
                 <div className="w-48 lg:w-full h-48 lg:h-full">
-                    <Image src="/images/elemen1.png" alt="corner image" width={300} height={300} />
+                    <Image src="/images/elemen/elemen1.png" alt="corner image" width={300} height={300} />
                 </div>
             </div>
         </div>
