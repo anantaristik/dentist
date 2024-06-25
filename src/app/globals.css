@@ -32,6 +32,14 @@ body {
     @apply text-[30px];
     font-family: 'Black Han Sans', sans-serif;
   }
+  .heading-4, h4 {
+    @apply text-[24px];
+    font-family: 'Black Han Sans', sans-serif;
+  }
+  .heading-5, h5 {
+    @apply text-[18px];
+    font-family: 'Black Han Sans', sans-serif;
+  }
   .body-1 {
     @apply text-[18px] font-normal;
   }

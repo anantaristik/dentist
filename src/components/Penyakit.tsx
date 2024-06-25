@@ -30,7 +30,7 @@ export default function Penyakit() {
                                 <div className="flex justify-center items-center">
                                     <Image className="rounded rounded-lg" src={penyakit.image} alt={penyakit.title} width={400} height={400} />
                                 </div>
-                                <div className="heading-3 text-krem">{penyakit.title}</div>
+                                <div className="lg:heading-3 heading-5 text-krem">{penyakit.title}</div>
                                 <div className="text-white text-left">{penyakit.description}</div>
                                 <div className="mt-auto w-full flex justify-center">
                                     <div
