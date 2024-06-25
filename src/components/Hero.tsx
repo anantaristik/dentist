@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="relative flex justify-center w-full min-h-screen bg-cover bg-center items-center" style={{ backgroundImage: "url('/images/heroBackground.png')" }}>
             <div className="container" style={{ zIndex: 1}}>
                 <div className="flex flex-col text-center">
-                <div className="lg:heading-0 heading-2 mt-10 text-biru h-52">
+                <div className="lg:heading-0 heading-2 mt-20 text-biru h-52">
                     <ReactTyped
                         strings={[
                             'BAGAIMANA CARA MENYIKAT GIGI YANG <span style="color:#F465BC;">BENAR?</span>',
@@ -18,7 +18,7 @@ export default function Hero() {
                         loop
                     />
                 </div>
-                    <div className="w-full flex justify-center items-center py-3">
+                    <div className="w-full flex justify-center items-center pb-3">
                         <Image src="/images/gigi.png" alt="hero" width={700} height={700}/>
                     </div>
 

@@ -33,7 +33,7 @@ const Quiz: React.FC = () => {
             } else {
                 setQuizFinished(true);
             }
-        }, 100); // Tampilkan jawaban selama 5 detik
+        }, 5000); // Tampilkan jawaban selama 5 detik
     };
 
     const restartQuiz = () => {
@@ -98,7 +98,7 @@ const Quiz: React.FC = () => {
                 <div className="flex flex-col items-center w-full">
                     <div className='flex flex-col items-center text-center bg-white py-10 rounded rounded-lg shadow-lg lg:w-3/4 w-full'>
                         <p className="absolute -translate-y-16 bg-kuning text-biru text-lg font-bold lg:w-1/4 w-1/2 rounded rounded-md py-2">Soal {currentQuestion + 1} dari {totalQuestions}</p>
-                        <p className="mt-4 bg-white py-8 rounded rounded-lg lg:text-xl">{quizData[currentQuestion].question}</p>
+                        <p className="mt-4 bg-white py-8 rounded rounded-lg lg:text-xl px-2">{quizData[currentQuestion].question}</p>
                         <div className="mt-4 flex flex-col justify-center gap-4 w-full items-center">
                             <button
                                 className="flex items-center justify-between w-[75%] lg:w-[50%] py-2 px-4 bg-success-400 text-white font-bold rounded-full hover:bg-success-500 shadow-lg"
