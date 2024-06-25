@@ -27,7 +27,7 @@ export default function PentingKeDokter() {
                 </div>
             </div>
 
-            <div className="absolute lg:right-96 -right-20 top-10" style={{ zIndex: 0}}>
+            <div className="absolute lg:right-96 right-0 top-10" style={{ zIndex: 0}}>
                 <div className="w-48 lg:w-full h-48 lg:h-full">
                     <Image src="/images/elemen/elemen2-kuning.png" alt="corner image" width={200} height={200} />
                 </div>
