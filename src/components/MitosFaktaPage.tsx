@@ -20,14 +20,14 @@ export default function MitosFaktaPage() {
                         </div>
                     </div>
 
-                    <div className="absolute left-0 bottom-0" style={{ zIndex: 0}}>
+                    <div className="absolute left-0 -bottom-4 lg:bottom-0" style={{ zIndex: -1}}>
                         <div className="w-48 lg:w-full h-48 lg:h-full">
                             <Image src="/images/elemen/elemen-mitos-kiri.png" alt="corner image" width={200} height={200} />
                         </div>
                     </div>
 
-                    <div className="absolute right-0 top-20" style={{ zIndex: 0}}>
-                        <div className="w-48 lg:w-full h-48 lg:h-full">
+                    <div className="absolute right-0 top-20" style={{ zIndex: -1}}>
+                        <div className="w-48 lg:w-full h-48 lg:h-full hidden lg:block">
                             <Image src="/images/elemen/elemen-mitos-kanan.png" alt="corner image" width={200} height={200} />
                         </div>
                     </div>
