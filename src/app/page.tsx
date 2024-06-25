@@ -6,6 +6,7 @@ import PentingKeDokter from "@/components/PentingKeDokter";
 import Makanan from "@/components/Makanan";
 import AnakTidakTakutKeDrg from "@/components/AnakTidakTakutKeDrg";
 import TipsMenjagaKesehatanGigi from "@/components/TipsMenjagaKesehatanGigi";
+import MitosFaktaPage from "@/components/MitosFaktaPage";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <WaveDivider bgColor="bg-white" waveColor="text-biru"/>
       <AnakTidakTakutKeDrg/>
       <TipsMenjagaKesehatanGigi/>
+      <WaveDivider bgColor="bg-krem" waveColor="text-biru"/>
+      <MitosFaktaPage/>
     </main>
   );
 }

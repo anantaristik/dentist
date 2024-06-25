@@ -16,6 +16,10 @@ body {
 }
 
 @layer utilities {
+  .superheading {
+    @apply text-[100px];
+    font-family: 'Black Han Sans', sans-serif;
+  }
   .heading-0 {
     @apply text-[52px];
     font-family: 'Black Han Sans', sans-serif;
