@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import WaveDivider from "@/components/divider";
 import Penyakit from "@/components/Penyakit";
 import PerawatanGigi from "@/components/PerawatanGigi";
+import PentingKeDokter from "@/components/PentingKeDokter";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Penyakit/>
       <WaveDivider bgColor="bg-biru" waveColor="text-white"/>
       <PerawatanGigi/>
-      <WaveDivider bgColor="bg-white" waveColor="text-krem"/>
+      <PentingKeDokter/>
     </main>
   );
 }
