@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import { useState } from 'react';
 import { CiMenuBurger } from "react-icons/ci";
 
@@ -15,13 +16,13 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className="w-full py-4 bg-krem flex justify-between items-center md:justify-center md:items-center">
+            <nav className="absolute w-full py-4 bg-krem flex justify-between items-center md:justify-center md:items-center" style={{ zIndex: 3 }}>
                 <div className="hidden md:flex gap-10 items-center">
-                    <div className="hover:text-biru cursor-pointer " >Tentang</div>
-                    <div className="hover:text-biru cursor-pointer" >Penyakit</div>
+                    <Link href='/' className="hover:text-biru cursor-pointer">Home</Link>
+                    <div className="hover:text-biru cursor-pointer">Penyakit</div>
                     <div className="hover:text-biru cursor-pointer" >Perawatan</div>
                     <div className="hover:text-biru cursor-pointer" >Kontak</div>
-                    <div className="text-white bg-pink hover:bg-pink-600 py-2 px-3 rounded cursor-pointer">Quiz</div>
+                    <Link href='/quiz' className="text-white bg-pink hover:bg-pink-600 py-2 px-3 rounded cursor-pointer">Quiz</Link>
                 </div>
                 <div className="md:hidden flex items-center">
                     <button onClick={toggleMenu} className="text-gray-700 hover:text-biru focus:outline-none pl-3">
@@ -32,7 +33,7 @@ export default function NavBar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden absolute top-0 left-0 w-full bg-krem">
+                <div className="md:hidden absolute top-0 left-0 w-full bg-krem" style={{ zIndex: 3 }}> 
                     <div className="flex flex-col gap-4 py-4 px-2">
                         <div className="flex justify-start pr-4">
                             <button onClick={closeMenu} className="text-gray-700 hover:text-biru focus:outline-none">

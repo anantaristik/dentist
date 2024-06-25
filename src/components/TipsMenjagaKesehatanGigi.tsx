@@ -5,7 +5,7 @@ export default function TipsMenjagaKesehatanGigi() {
     return (
         <div className="relative flex justify-center w-full min-h-auto bg-krem">
             <div className="container py-20 " style={{ zIndex: 1 }}>
-                <div className="flex lg:flex-row md:flex-row flex-col gap-10 lg:gap-0 justify-center">
+                <div className="flex lg:flex-row flex-col gap-10 lg:gap-0 justify-center">
 
                     <div className="w-full">
                         <Image src={"/images/tipsMenjagaImage.png"} alt="corner image" width={600} height={600} />

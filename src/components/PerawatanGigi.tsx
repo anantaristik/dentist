@@ -16,7 +16,7 @@ export default function PerawatanGigi() {
                                     className="rounded-lg border border-kuning border-8 transform transition-transform duration-200 hover:scale-105 shadow-lg object-cover"
                                     src={perawatan.image}
                                     alt={perawatan.title}
-                                    layout="fill"
+                                    fill
                                 />
                             </div>
 

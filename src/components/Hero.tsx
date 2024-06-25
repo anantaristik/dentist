@@ -5,10 +5,10 @@ import { ReactTyped } from "react-typed";
 
 export default function Hero() {
     return (
-        <div className="relative flex justify-center w-full min-h-auto bg-cover bg-center items-center" style={{ backgroundImage: "url('/images/heroBackground.png')" }}>
+        <div className="relative flex justify-center w-full min-h-screen bg-cover bg-center items-center" style={{ backgroundImage: "url('/images/heroBackground.png')" }}>
             <div className="container" style={{ zIndex: 1}}>
                 <div className="flex flex-col text-center">
-                <div className="lg:heading-0 heading-2 py-10 text-biru">
+                <div className="lg:heading-0 heading-2 mt-10 text-biru h-52">
                     <ReactTyped
                         strings={[
                             'BAGAIMANA CARA MENYIKAT GIGI YANG <span style="color:#F465BC;">BENAR?</span>',
