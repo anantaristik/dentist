@@ -60,7 +60,7 @@ export default function Penyakit() {
                                 </div>
                                 <div className="w-full lg:w-1/2 flex flex-col">
                                     <div className="heading-3 mb-4 text-biru">{selectedPenyakit.title}</div>
-                                        <div className="max-h-96 overflow-y-auto">
+                                        <div className="max-h-64 overflow-y-auto">
                                             <p className="text-justify" dangerouslySetInnerHTML={{ __html: selectedPenyakit.details }}></p>
                                         </div>
                                 </div>
