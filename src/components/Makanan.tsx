@@ -11,7 +11,6 @@ export default function Makanan() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-20 lg:mb-10 lg:mt-20 mt-10">
                         {makananData.map((makanan) => (
                             <div key={makanan.id} className="flex flex-col items-center justify-between w-full p-4">
-                                <div className="w-full h-64 relative mb-4">
                                     <Image
                                         className="transform transition-transform duration-200 hover:scale-105 object-cover rounded-lg"
                                         src={makanan.image}
@@ -19,8 +18,7 @@ export default function Makanan() {
                                         width={500}
                                         height={500}
                                     />
-                                </div>
-                                <div className="flex flex-col p-4 bg-kuning rounded-lg w-full lg:mt-10 ">
+                                <div className="flex flex-col p-4 bg-kuning rounded-lg w-full h-full mt-3">
                                     <div className="text-xl text-biru font-semibold py-2 text-center">{makanan.title}</div>
                                     <div className="text-center">{makanan.description}</div>
                                 </div>

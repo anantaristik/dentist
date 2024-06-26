@@ -15,7 +15,7 @@ export const tidakTakutData: TidakTakutData[] = [
     {
         id: 2,
         title: "",
-        description: "Tidak menakuti anak walau sebelumnya pernah memiliki pengalaman buruk ke drg",
+        description: "Tidak menakuti anak walau sebelumnya pernah memiliki pengalaman buruk ke dokter gigi",
         image: "/images/tidaktakut/2. tidak menakuti.png",
     },
     {

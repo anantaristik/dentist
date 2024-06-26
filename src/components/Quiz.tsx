@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 import { VscDebugRestart } from "react-icons/vsc";
 import ExplanationComponent from './Explanation';
 import { quizData } from './data/quizData';
+import LoadingBar from 'react-top-loading-bar';
 
 const Quiz: React.FC = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -11,6 +12,7 @@ const Quiz: React.FC = () => {
     const [showExplanation, setShowExplanation] = useState(false);
     const [userAnswer, setUserAnswer] = useState<boolean | null>(null);
     const [quizFinished, setQuizFinished] = useState(false);
+    const loadingBarRef = useRef(null);
 
     const totalQuestions = quizData.length;
     const maxScore = 100;
@@ -24,10 +26,16 @@ const Quiz: React.FC = () => {
 
         setUserAnswer(isCorrect);
         setShowExplanation(true);
+        if (loadingBarRef.current) {
+            (loadingBarRef.current as any).continuousStart();
+        }
 
         setTimeout(() => {
             setShowExplanation(false);
             setUserAnswer(null);
+            if (loadingBarRef.current) {
+                (loadingBarRef.current as any).complete();
+            }
             if (currentQuestion < totalQuestions - 1) {
                 setCurrentQuestion(currentQuestion + 1);
             } else {
@@ -48,13 +56,15 @@ const Quiz: React.FC = () => {
     };
 
     return (
-        <div className="container flex justify-center items-center bg-white lg:w-1/2 py-32 rounded rounded-lg shadow-lg min-h-[800px] mt-10"
+        <div className="container flex justify-center items-center bg-white lg:w-1/2 py-32 rounded rounded-lg shadow-lg min-h-[800px] mt-16"
             style={{
                 backgroundImage: 'linear-gradient(rgba(0, 0, 255, 0.5), rgba(106, 90, 205, 0.5)), url(/images/2003.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
             }}
         >
+            <LoadingBar color='#f11946' ref={loadingBarRef} />
+
             {quizFinished ? (
                 <div className="flex flex-col items-center w-full">
                     <div className='flex flex-col items-center text-center bg-white py-10 rounded rounded-lg shadow-lg lg:w-3/4 w-full'>
@@ -104,14 +114,14 @@ const Quiz: React.FC = () => {
                                 className="flex items-center justify-between w-[75%] lg:w-[50%] py-2 px-4 bg-success-400 text-white font-bold rounded-full hover:bg-success-500 shadow-lg"
                                 onClick={() => handleAnswer(true)}
                             >
-                                FAKTA
+                                BENAR
                                 <FaCheckCircle className="ml-2 inline-block text-lg" />
                             </button>
                             <button
                                 className="flex items-center justify-between w-[75%] lg:w-[50%] py-2 px-4 bg-error-400 text-white font-bold rounded-full hover:bg-error-500 shadow-lg"
                                 onClick={() => handleAnswer(false)}
                             >
-                                MITOS
+                                SALAH
                                 <FaTimesCircle className="ml-2 inline-block text-lg" />
                             </button>
                         </div>

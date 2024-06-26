@@ -16,7 +16,7 @@ export default function TipsMenjagaKesehatanGigi() {
 
                         {tipsMenjagaData.map((tipsMenjaga) => (
                             <div key={tipsMenjaga.id} className="flex flex-col gap-2">
-                                <div className="body-1 text-justify bg-white px-2 py-3">{tipsMenjaga.id}. {tipsMenjaga.description}</div>
+                                <p className="body-1 text-justify bg-white px-2 py-3" dangerouslySetInnerHTML={{ __html:`${tipsMenjaga.id}. ${tipsMenjaga.description}` }}></p>
                             </div>
                         ))}
                     </div>   

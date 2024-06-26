@@ -19,9 +19,9 @@ export default function NavBar() {
             <nav className="absolute w-full py-4 bg-krem flex justify-between items-center md:justify-center md:items-center" style={{ zIndex: 3 }}>
                 <div className="hidden md:flex gap-10 items-center">
                     <Link href='/' className="hover:text-biru cursor-pointer">Home</Link>
-                    <div className="hover:text-biru cursor-pointer">Penyakit</div>
-                    <div className="hover:text-biru cursor-pointer" >Perawatan</div>
-                    <div className="hover:text-biru cursor-pointer" >Kontak</div>
+                    <Link href='/#penyakit' className="hover:text-biru cursor-pointer">Penyakit</Link>
+                    <Link href={'/#perawatan'} className="hover:text-biru cursor-pointer" >Perawatan</Link>
+                    <Link href={'/#kontak'} className="hover:text-biru cursor-pointer" >Kontak</Link>
                     <Link href='/quiz' className="text-white bg-pink hover:bg-pink-600 py-2 px-3 rounded cursor-pointer">Quiz</Link>
                 </div>
                 <div className="md:hidden flex items-center">

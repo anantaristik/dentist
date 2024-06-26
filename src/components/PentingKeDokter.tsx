@@ -8,21 +8,19 @@ export default function PentingKeDokter() {
                 <div className="flex flex-col text-center">
                     <div className="lg:heading-1 heading-3 text-biru">Kenapa Penting ke Dokter Gigi <br/> <span className="bg-oranye text-white p-2 rounded">Setiap 6 Bulan Sekali?</span></div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:mb-20 lg:mt-40 mt-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:mb-20 lg:mt-40 md:mt-24 mt-10">
                         {pentingKeDokterData.map((pentingKeDokter) => (
-                         <div key={pentingKeDokter.id} className="flex flex-col items-center justify-center bg-biru rounded-lg shadow-xl">
-                            <div className="w-full h-64 relative">
+                            <div key={pentingKeDokter.id} className="flex flex-col items-center justify-center bg-biru rounded-lg shadow-xl">
                                 <Image
-                                    className="transform transition-transform duration-200 hover:scale-105 lg:-translate-y-20"
+                                    className="transform transition-transform duration-200 hover:scale-105 lg:-translate-y-20 md:-translate-y-16 mb-md-lg"
                                     src={pentingKeDokter.image}
                                     alt={pentingKeDokter.description}
                                     width={500}
                                     height={500}
                                 />
+                                <div className="text-xl text-white font-semibold py-4 text-center px-4">{pentingKeDokter.description}</div>
                             </div>
-                            <div className="text-xl text-white font-semibold py-4 text-center px-4 ">{pentingKeDokter.description}</div>
-                        </div>
-                    ))}
+                        ))}
                     </div>
                 </div>
             </div>
@@ -32,6 +30,16 @@ export default function PentingKeDokter() {
                     <Image src="/images/elemen/elemen2-kuning.png" alt="corner image" width={200} height={200} />
                 </div>
             </div>
+
+            <style>
+                {`
+                    @media (min-width: 768px) {
+                        .mb-md-lg {
+                            margin-bottom: -90px;
+                        }
+                    }
+                `}
+            </style>
 
         </div>
     )

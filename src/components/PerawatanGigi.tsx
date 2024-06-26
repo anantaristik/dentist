@@ -22,7 +22,7 @@ export default function PerawatanGigi() {
 
                             <div className={`heading-3 ${perawatan.colorTitle}`}>{perawatan.title}</div>
 
-                            <div className="px-5">{perawatan.description}</div>
+                            <div className="px-5" dangerouslySetInnerHTML={{ __html: perawatan.description }}></div>
 
                         </div>
                         ))}

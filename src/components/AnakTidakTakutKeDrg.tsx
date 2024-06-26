@@ -21,7 +21,7 @@ export default function AnakTidakTakutKeDrg() {
                                         />
                                     </div>
                                     <div className="flex-1">
-                                        <p className="body-1 text-white text-left">{tidakTakut.description}</p>
+                                        <p className="body-1 text-white text-left" dangerouslySetInnerHTML={{ __html: `${tidakTakut.description}` }}></p>
                                     </div>
                                 </div>
                             </div>
