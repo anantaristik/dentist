@@ -72,12 +72,12 @@ const Quiz: React.FC = () => {
                         <p className="text-2xl font-bold bg-white p-5 rounded rounded-lg">Anda Benar {correctAnswers} dari {totalQuestions} <br /> Skor Anda: <br /></p>
                         
                         <div className='text-4xl font-bold text-kuning p-5 rounded rounded-full bg-biru mb-10'>{Math.round((correctAnswers / totalQuestions) * maxScore)}</div> 
-                            <button onClick={toggleExplanation} className="items-center lg:w-1/3 w-full flex h-14 bg-white border border-black rounded-full text-lg hover:text-white hover:bg-pink mb-4">
+                            <button onClick={toggleExplanation} className="items-center lg:w-3/4 w-3/4 flex h-14 bg-white border border-black rounded-full text-lg hover:text-white hover:bg-pink mb-4">
                                 <span className="ml-6">{showExplanation ? 'Tutup Pembahasan' : 'Lihat Pembahasan'}</span>
                             </button>
 
                             {showExplanation && <ExplanationComponent quizData={quizData} />}
-                            <button onClick={restartQuiz} className="relative mt-5 lg:w-1/3 w-full flex h-14 pl-5 bg-white py-3 border border-black rounded-full text-lg hover:text-white hover:bg-pink">
+                            <button onClick={restartQuiz} className="relative lg:w-3/4 mt-5 w-3/4 flex h-14 pl-5 bg-white py-3 border border-black rounded-full text-lg hover:text-white hover:bg-pink">
                                 <span className="ml-6">Mulai Lagi!</span>
                                 <div className="absolute bg-pink text-white rounded-full flex justify-center items-center h-14 w-14 right-0 bottom-0">
                                     <VscDebugRestart className="text-2xl" />

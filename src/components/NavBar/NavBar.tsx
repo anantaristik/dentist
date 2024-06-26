@@ -42,11 +42,11 @@ export default function NavBar() {
                                 </svg>
                             </button>
                         </div>
-                        <div className="hover:text-biru cursor-pointer" >Tentang</div>
-                        <div className="hover:text-biru cursor-pointer" >Penyakit</div>
-                        <div className="hover:text-biru cursor-pointer" >Perawatan</div>
-                        <div className="hover:text-biru cursor-pointer" >Kontak</div>
-                        <div className="text-white bg-pink py-2 px-3 rounded hover:text-biru cursor-pointer">Quiz</div>
+                        <Link href='/' className="hover:text-biru cursor-pointer">Home</Link>
+                        <Link href='/#penyakit' className="hover:text-biru cursor-pointer">Penyakit</Link>
+                        <Link href={'/#perawatan'} className="hover:text-biru cursor-pointer" >Perawatan</Link>
+                        <Link href={'/#kontak'} className="hover:text-biru cursor-pointer" >Kontak</Link>
+                        <Link href='/quiz' className="text-white bg-pink hover:bg-pink-600 py-2 px-3 rounded cursor-pointer">Quiz</Link>
                     </div>
                 </div>
             )}

@@ -19,8 +19,8 @@ export default function Hero() {
                         loop
                     />
                 </div>
-                    <div className="w-full flex justify-center items-center pb-3">
-                        <video src="/video headline.mov" width="800" autoPlay loop muted />
+                    <div className="w-full flex justify-center items-center pb-3" dangerouslySetInnerHTML={{ __html: '<video src="/video headline.mov" width="800" autoPlay loop muted playsinline />' }}>
+
                     </div>
 
                     <div className="py-2">

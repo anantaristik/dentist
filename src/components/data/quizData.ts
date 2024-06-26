@@ -39,7 +39,7 @@ export const quizData: QuizQuestion[] = [
     },
     {
         id: 6,
-        question: "Fluorida Berbahaya bagi Anak",
+        question: "Fluorida tidak Berbahaya bagi Anak",
         isTrue: true,
         explanation: "Fluoride aman untuk anak-anak dan bermanfaat bagi kesehatan gigi mereka. Ini membantu memperkuat enamel gigi dan mencegah gigi berlubang.",
     },
