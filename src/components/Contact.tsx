@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { FaSquareInstagram, FaLocationDot  } from "react-icons/fa6";
+import { FaSquareInstagram, FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
@@ -18,17 +18,20 @@ export default function Contact() {
                             <div className="text-xl text-biru py-2">{`We're here to help and answer any questions you may have. We look forward to hearing from you`}</div>
 
                             <div className="flex flex-col bg-biru rounded rounded-lg py-5 lg:px-10 px-3 mt-5 text-white gap-5 lg:body-1 items-center justify-center">
-                                <div className="flex gap-3 items-center ">
-                                <FaLocationDot size={30}/>
-                                    <div>Jl. Prof. DR. Moestopo No.47, Mojo, Kec. Tambaksari, Surabaya, Jawa Timur 60132</div>
-                                </div>
                                 <div className="flex gap-3 items-center">
                                 <FaSquareInstagram size={28}/>
-                                    <div>@fkgunair</div>
+                                    <div>@pkl_drsoetomo2024</div>
                                 </div>
-                                <div className="flex gap-3 items-center">
-                                    <MdEmail size={30}/>
-                                    <div>fkgunair@unair.ac.id</div>
+                                <div className="flex gap-3 items-center text-left">
+                                    <FaSquarePhone size={30}/>
+                                    <div>
+                                        <ul>
+                                            <li>Rachma Fadhilah (+62 812 80515106)</li>
+                                            <li>Nakhwah Ulayya (+62 812 34868039)</li>
+                                            <li>Annisa Anggie (+62 812 52668127)</li>
+                                            <li>Cinta Widya (+62 812 30224901)</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
